@@ -1,0 +1,98 @@
+<html>
+<body>
+<div class="register-wrapper col-sm-offset-3 col-sm-6">
+    <div class="row">
+        <div class="col-xs-6 tabs login-tab">
+            <a class="tabs-item" data-tab="login-container" data-track="Click|LoginTab|1" href="login">Login</a>
+        </div>
+        <div class="col-xs-6 tabs register-tab active">
+            <a class="tabs-item" data-tab="register-container" data-track="Click|SignUpTab|1" href="register">Sign Up</a>
+        </div>
+    </div>
+    <section class="tab-content">
+        
+        <div id="login-container" class="login-container login__popup"><form class="login__popup-login-form" name="login-form" id="login-form" action="/login" method="POST">
+                    <a href="#" data-js="facebook-button" class="btn btn--facebook btn--block"><i class="icon-facebook"></i> Sign in with Facebook</a>
+
+                    <div class="login__popup-separator">
+                        <p>
+                            <span>OR</span>
+                        </p>
+                    </div>
+
+                    <div class="input login__username-input">
+                        <input name="username" class="login-form-username" type="text" placeholder="Email">
+                        <span class="login__username-validation validation">You have entered an invalid email address</span>
+                    </div>
+                    <div class="input login__password-input">
+                        <input name="password" class="login-form-password" type="password" placeholder="Password">
+                        <span class="login__password-validation validation">You have entered an invalid password</span>
+                    </div>
+
+                    <p class="login__popup-login-error validation">
+                        We’re sorry but we do not recognise your username and/or password. Please try again.
+                    </p>
+
+                    <button data-track-page="MyAccount" data-track="Login|Submit|1" class="btn btn--cta btn--block login__popup-submit" type="submit">Login</button>
+
+                    <a class="js-login__forgottenpassword" data-track-page="MyAccount" data-track="Login|ForgottenPassword|1" href="/account/forgottenpassword" target="_blank">Forgotten password</a>
+                </form></div>
+        <div id="register-container" class="register-container tab-active">
+            <div class="form-group">
+                <div class="col-xs-12">
+                  <button type="submit" data-js="facebook-button" class="btn btn--facebook btn--block"><i class="icon-facebook"></i> Sign up with Facebook</button>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-12 myAccount-register--separator">
+                    <p class="myAccount-register--separator">
+                        <span>OR</span>
+                    </p>
+                </div>
+            </div>
+            <form class="myAccount-register__form">
+                <div class="form-group">
+                    <div class="col-sm-12 myAccount-register__item input">
+                        <input type="email" name="email" data-name="email" class="form-control" id="inputEmail3" placeholder="Email address">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-12 myAccount-register__item input">
+                        <input class="password-input" type="password" name="password" data-name="password" id="inputPassword3" placeholder="Password">
+                    </div>
+                </div>
+                <div class="form-group col-sm-12 checkbox">
+                    <label class="checkbox-label icon-checkmark checkbox-characters">7 - 15 characters</label>
+                    <label class="checkbox-label icon-checkmark checkbox-letter">Letter</label>
+                    <label class="checkbox-label icon-checkmark checkbox-number">Number</label>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-12 myAccount-register__item input">
+                        <input type="password" name="confirmedPassword" data-name="confirmedPassword" class="form-control" id="inputPassword3" placeholder="Confirm Password">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-12 checkbox myAccount-register__item input">
+                        <label>
+                            <input type="checkbox" value="yes" name="terms" data-name="terms"> I have read and agreed to
+                            
+                                <a href="http://help.laterooms.com" data-track="click|TandCs|1" target="_blank">Terms &amp; Conditions</a>
+                            
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group myAccount-register__notification">
+                    <div class="col-sm-12 myAccount-register__message">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <button type="submit" data-track="SignUp|Submit|1" class="myAccount-register__save btn btn--cta btn--block">Sign Up</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+</div>
+</body>
+</html>
